@@ -17,17 +17,7 @@ form.addEventListener("submit", (e)=>{
             return
         } 
         resp.innerText = `Lados podem formar um triângulo`
-        const form = document.querySelector("form")
-        const resp = document.querySelector("h3")
-        
-        form.addEventListener("submit",(e) =>{
-            e.preventDefault()
-        
-            const LadoA = Number(form.inLadoA.value)
-            const LadoB = Number(form.inLadoB.value)
-            const LadoC = Number(form.inLadoC.value)
             
-        })
         if(ladoA == ladoB && ladoA == ladoC){
             resp1.innerText = `Tipo: Equilátero`
         } else if((ladoA == ladoB) || (ladoA == ladoC) || (ladoB == ladoC)){
